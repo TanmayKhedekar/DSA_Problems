@@ -1,1 +1,105 @@
+//String essential Problem 
+import java.util.*;
+class Main {
+    public static void main(String[] args) {
+        String name="Tanmay";
+        System.out.println(name);
+        int arr[]=new int[3];
+        int brr[]=arr;
+        arr[0]=4;
+        brr[0]=7;
+        System.out.println(arr[0]);
 
+        //length of string 
+        int len=name.length();
+        System.out.println(len);
+        
+        //join two strings
+        String first="Tanmay";
+        String second="Khedekar";
+        String join=first.concat(second);
+        System.out.println(join);
+        
+        // compare strings
+        String first1 ="java";
+        String second1="java";
+        String third ="python";
+        boolean result=first1.equals(second1);
+        boolean result1=first1.equals(third);
+        System.out.println(result);
+        System.out.println(result1);
+        
+        //contains: The contains() method checks whether the specified string (sequence of characters) is present in the string or not.
+        String str1="Java is language";
+        boolean res=str1.contains("Java");
+        System.out.println(res);
+        
+        // Substrings: The Java substring() method extracts a part of the string (substring) and returns it.
+        String str="Tanmay_Sandip_Khedekar";
+        System.out.println(str.substring(0,7));
+        
+        //joins: The join() method returns a new string with the given elements joined with the specified delimiter.
+        String str3 ="I";
+        String str4="India";
+        System.out.println(String.join(" ",str3,str4));
+        
+        //Replace: The replace() method replaces each matching occurrence of a character/text in the string with the new character/text.
+        String a="Tanmay";
+        System.out.println(a.replace('T','m'));
+        
+        //ReplaceAll(): The replaceAll() method replaces each substring that matches the regex of the string with the specified text.
+        String str5="Java123is456Language   ";
+        String rb=str5.trim();
+        String rex="\\d++";
+        System.out.println(str5.replaceAll(rex," "));
+        System.out.println(rb);
+        
+        //charAt(): The charAt() method returns the character at the specified index.
+        String lef="Hello brother";
+        System.out.println(lef.charAt(3));
+        
+        //getBytes(): Here, string is an object of the String class.
+        String str6="Java";
+        byte[] byteArray;
+        byteArray=str6.getBytes();
+        System.out.println(Arrays.toString(byteArray));
+        
+        //compareTo():The compareTo() method compares two strings lexicographically (in the dictionary order). The comparison is based on the Unicode value of each character in the strings.
+        String ar1="Learn java";
+        String ar2="Learn python";
+        int resul=ar1.compareTo(ar2);
+        System.out.println(resul);
+        
+        //format:The format() method returns a formatted string based on the argument passed.
+        String ar3="Java";
+        int ab=30;
+        String resc=String.format("%s",ar3);
+        System.out.println(resc);
+        System.out.println(String.format("hexadecimal : %x",ab));
+        
+        //toUpperCase():Converts the string to uppercase.
+        //toLowerCase():Converts the string to lowercase.
+        //toCharArray():Converts the string to a char array.
+        
+        
+        //A hashcode is a number (object's memory address) generated from any object, not just strings. This number is used to store/retrieve objects quickly in a hashtable.
+        String s1="Java";
+        String s2="Java Programming";
+        System.out.println(s1.hashCode());
+        System.out.println(s2.hashCode());
+        
+        //Intern():The String interning ensures that all strings having the same contents use the same memory.
+        String sr1 = new String("xyz");
+        String sr2 = new String("xyz");
+        System.out.println(sr1 == sr2); // false
+        sr1 = sr1.intern();
+        sr2 = sr2.intern();
+        System.out.println(sr1 == sr2); // true
+        
+        //subSequence():
+        String str = "Java Programming";
+        System.out.println(str.subSequence(3, 8)); // a Pro
+
+
+ }
+}
