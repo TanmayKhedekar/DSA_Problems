@@ -57,6 +57,7 @@ class SinglyLinkedList {
         Node next;
         Node(int data) { this.data = data; }
     }
+    
 
     Node head;
 
