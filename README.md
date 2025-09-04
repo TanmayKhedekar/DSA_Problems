@@ -1,9 +1,3 @@
-Got it ✅ You want a **DSA (Data Structures & Algorithms) Roadmap** covering **all topics step by step** so you can prepare for **placements** properly.
-
-Here’s a **complete roadmap** from basics → advanced → placement-level topics:
-
----
-
 # 📌 **DSA Roadmap (Step by Step)**
 
 ---
@@ -232,6 +226,3 @@ Here’s a **complete roadmap** from basics → advanced → placement-level top
 
 4. Do **mock interviews**.
 
----
-
-👉 Do you want me to also create a **week-by-week DSA preparation roadmap** (like 3 months placement plan) so you can follow a timeline?
